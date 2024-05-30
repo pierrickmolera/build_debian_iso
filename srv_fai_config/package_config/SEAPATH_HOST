@@ -30,3 +30,5 @@ qemu-system-x86
 qemu-utils
 snmpd
 virtinst
+firmware-linux-free
+firmware-misc-nonfree
