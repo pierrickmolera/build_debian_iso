@@ -1,2 +1,4 @@
 PACKAGES install-norec
 firmware-sof-signed
+firmware-iwlwifi
+

@@ -1,0 +1,53 @@
+# default values for installation. You can override them in your *.var files
+HOSTNAME=seapath_std
+
+# allow installation of packages from unsigned repositories
+FAI_ALLOW_UNSIGNED=0
+
+# Set UTC=yes if your system clock is set to UTC (GMT), and UTC=no if not.
+UTC=yes
+TIMEZONE=Europe/Paris
+KEYMAP=fr-latin1
+
+# the hash of the root password for the new installed linux system
+# pw is "toto"
+ROOTPW='$y$j9T$s.szNr.QzTLk8h5qMYDpo0$YMaC8.04FilI/1AguyofvbV4FH1me6Nc7SHP4hyefZ2'
+
+# errors in tasks greater than this value will cause the installation to stop
+# normal or info messages:       1xx, 2xx
+# warnings:                      3xx, 4xx
+# minor errors:                  5xx, 6xx
+# errors:                        7xx, 8xx
+STOP_ON_ERROR=500
+
+# set parameter for install_packages(8)
+MAXPACKAGES=800
+
+# a user account will be created
+username=virtu
+USERPW='$y$j9T$s.szNr.QzTLk8h5qMYDpo0$YMaC8.04FilI/1AguyofvbV4FH1me6Nc7SHP4hyefZ2'
+# a ansible user account will be created
+usernameansible=ansible
+
+myrootkey='ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCwCc+mRsICii/LCPhpLnZRCpLQsKMtV26Wxjcs2IdtU0NYGXtqk1bSHAvhfABKZB7ZB9jiATNYr1MOR6glmsLoupl3f89tRUsCf3W3FwjEmIDy+gr8zXUa/v6EQDfnQn9teYhf3XpCMKp/0R0DRR2XI7UzreGIoYwM1feCgi2ign9OjcyCieIgfpekLfHDC2VsglpAjD/YYjE9xmQ/DRaiN6O47hnig1TKVvuW96LEjkCisZPBT1S4bnCaA2RxppeI/b62JRVUqkpUtweURIpD1AZxo2Bnqt2yMokhAJ55gckDzn82sgbEjtmTZSwaOeE4OJsaRyJc6WqQYcobMjR7HCzDUuuz4GptUymvhHBOnEREdXidTXUybPG2WxcIIpSO/C8hddYdffFQhRSZzK/iuEdvd+xzFTB5s+hGVIvzrkiIBq0ipmm7Q3BxVGEzXmFa16Ena0zMXlHet0AUT1N/rh/uo5xalTA1TP7QP7bGmehv/4Mx4R9CofIZfNNFBGTbvi85MmT7Yt7X5OjO74A1OdKo7NPkhCSNSiGQfoCsly2jNLbWBuMW/yWRXByZE2K8rpn9YbPeDDMX5s/P6rERONyp4RlNZ+DsKQFf4jDowJvopbj28wqPpRa/mbT/mUXla0CnPGIRbHUKEnCL2Bkji/jU4lxI2xEP3P0AlpZd7Q== test@seapath.com'
+myuserkey='ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCwCc+mRsICii/LCPhpLnZRCpLQsKMtV26Wxjcs2IdtU0NYGXtqk1bSHAvhfABKZB7ZB9jiATNYr1MOR6glmsLoupl3f89tRUsCf3W3FwjEmIDy+gr8zXUa/v6EQDfnQn9teYhf3XpCMKp/0R0DRR2XI7UzreGIoYwM1feCgi2ign9OjcyCieIgfpekLfHDC2VsglpAjD/YYjE9xmQ/DRaiN6O47hnig1TKVvuW96LEjkCisZPBT1S4bnCaA2RxppeI/b62JRVUqkpUtweURIpD1AZxo2Bnqt2yMokhAJ55gckDzn82sgbEjtmTZSwaOeE4OJsaRyJc6WqQYcobMjR7HCzDUuuz4GptUymvhHBOnEREdXidTXUybPG2WxcIIpSO/C8hddYdffFQhRSZzK/iuEdvd+xzFTB5s+hGVIvzrkiIBq0ipmm7Q3BxVGEzXmFa16Ena0zMXlHet0AUT1N/rh/uo5xalTA1TP7QP7bGmehv/4Mx4R9CofIZfNNFBGTbvi85MmT7Yt7X5OjO74A1OdKo7NPkhCSNSiGQfoCsly2jNLbWBuMW/yWRXByZE2K8rpn9YbPeDDMX5s/P6rERONyp4RlNZ+DsKQFf4jDowJvopbj28wqPpRa/mbT/mUXla0CnPGIRbHUKEnCL2Bkji/jU4lxI2xEP3P0AlpZd7Q== test@seapath.com'
+ansiblekey='ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCwCc+mRsICii/LCPhpLnZRCpLQsKMtV26Wxjcs2IdtU0NYGXtqk1bSHAvhfABKZB7ZB9jiATNYr1MOR6glmsLoupl3f89tRUsCf3W3FwjEmIDy+gr8zXUa/v6EQDfnQn9teYhf3XpCMKp/0R0DRR2XI7UzreGIoYwM1feCgi2ign9OjcyCieIgfpekLfHDC2VsglpAjD/YYjE9xmQ/DRaiN6O47hnig1TKVvuW96LEjkCisZPBT1S4bnCaA2RxppeI/b62JRVUqkpUtweURIpD1AZxo2Bnqt2yMokhAJ55gckDzn82sgbEjtmTZSwaOeE4OJsaRyJc6WqQYcobMjR7HCzDUuuz4GptUymvhHBOnEREdXidTXUybPG2WxcIIpSO/C8hddYdffFQhRSZzK/iuEdvd+xzFTB5s+hGVIvzrkiIBq0ipmm7Q3BxVGEzXmFa16Ena0zMXlHet0AUT1N/rh/uo5xalTA1TP7QP7bGmehv/4Mx4R9CofIZfNNFBGTbvi85MmT7Yt7X5OjO74A1OdKo7NPkhCSNSiGQfoCsly2jNLbWBuMW/yWRXByZE2K8rpn9YbPeDDMX5s/P6rERONyp4RlNZ+DsKQFf4jDowJvopbj28wqPpRa/mbT/mUXla0CnPGIRbHUKEnCL2Bkji/jU4lxI2xEP3P0AlpZd7Q== test@seapath.com'
+
+#APTPROXY=http://proxy:3128
+apt_cdn=http://ftp.fr.debian.org
+#SERVER=192.168.122.3
+#LOGUSER=fai
+
+# network configuration static
+#a0cec88b0b36
+REMOTENIC=enx00e04c680a5b
+REMOTEADDR=192.168.100.2/24
+REMOTEGW=192.168.100.1
+# you can set the ip on a vlan interface
+#REMOTEVLANID=8
+
+# network configuration dhcp
+# No: DHCP will be disable
+# all: DHCP will be enable for all interface
+# [interface]: DHCP will be enable for the interface. e.g enp1s0
+REMOTEDHCP=no
